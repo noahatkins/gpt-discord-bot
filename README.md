@@ -75,14 +75,6 @@ Secrets are loaded via `.env` thanks to `python-dotenv`. Never commit `.env`; us
 - **Thread creation fails**: verify the bot has the thread permissions listed above and that you run `/ask` in a guild text channel (not DMs).
 - **OpenAI errors**: check that `OPENAI_API_KEY` is valid and the model name exists in your account. The bot logs failures to the console.
 
-## Publishing Checklist
-
-- [ ] Run `python -m pip install -r requirements.txt` and `python -m py_compile bot.py services/openai_client.py`
-- [ ] Verify `.env` is ignored and `env.example` stays up to date
-- [ ] Add a LICENSE file (MIT suggested) and basic contribution notes
-- [ ] Enable Dependabot/renovate or track dependency bumps manually
-- [ ] Remove any server-specific references before making the repository public
-
 ## License
 
 MIT © noahatkins
